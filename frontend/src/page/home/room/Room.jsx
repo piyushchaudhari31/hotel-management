@@ -211,7 +211,7 @@ const Room = () => {
               <div className="img-section">
                 <Image
                   preview={false}
-                  src={`http://localhost:3000/room_img/${data.roomImage}`}
+                  src={`https://hotel-management-be-75w4.onrender.com/room_img/${data.roomImage}`}
                   alt={data.roomType}
                   className="room-image"
                 />

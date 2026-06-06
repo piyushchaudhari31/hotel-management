@@ -65,7 +65,7 @@ const Setting = () => {
     const imageUrl = previewImage
         ? previewImage
         : user?.profileImg
-            ? `http://localhost:3000/profile_img/${user.profileImg}`
+            ? `https://hotel-management-be-75w4.onrender.com/profile_img/${user.profileImg}`
             : "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300";
 
     const imageChangeHandler = (e) => {
