@@ -25,13 +25,16 @@ const Room = () => {
   const navigate = useNavigate()
 
   const { room, loading } = useSelector((state) => state.room);
-  const user = useSelector((state) => state?.customer?.customer);
+  const user = useSelector((state) => state?.customer.customer);
 
-  console.log(user);
-  
   useEffect(() => {
     dispatch(getCustomerDetail());
   }, [dispatch]);
+
+
+
+
+
 
   const [dateValue, setDateValue] = useState(null);
   const [guestCount, setGuestCount] = useState(1);
