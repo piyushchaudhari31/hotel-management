@@ -126,7 +126,7 @@ const Navbar = () => {
             </button>
           )}
 
-
+          
         </div>
       </div>
 
@@ -134,15 +134,7 @@ const Navbar = () => {
         <IoClose className="close-icon" onClick={() => setOpenProfile(false)} />
 
         <div className="drawer-user">
-          <img
-            src={profileImage}
-            className="profile-img"
-            alt="profile"
-            onClick={() => setOpenProfile(true)}
-            onError={(e) => {
-              e.currentTarget.src = "https://cdn-icons-png.flaticon.com/512/149/149071.png";
-            }}
-          />
+          <img src={profileImage} alt="profile" />
           <h3>{user?.fullName?.firstName || user?.username || "User"}</h3>
           <p>{user?.email || "user@gmail.com"}</p>
         </div>

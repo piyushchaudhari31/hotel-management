@@ -33,7 +33,7 @@ app.use(cookieParser())
 app.use(limiter)
 
 app.use('/room_img', express.static(path.join(__dirname, 'src/assets/room_img')));
-app.use('/profile_img', express.static(path.join(__dirname, 'src/assets/profile_img')));
+app.use('/profile_img', express.static(path.join(__dirname, 'src/assets/Profile_img')));
 
 
 // ---------: Api Routes :----------------------
