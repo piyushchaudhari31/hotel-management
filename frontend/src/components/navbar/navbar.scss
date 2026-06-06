@@ -1,0 +1,374 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 3vw;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.4s ease;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    img {
+      width: 35px;
+      height: 35px;
+      object-fit: contain;
+    }
+
+    .realnet {
+      font-family: "Colonna MT", serif;
+      font-weight: 500;
+      color: white;
+      margin: 0;
+    }
+  }
+
+  .menuList {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .menu {
+      text-decoration: none;
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: 0.8rem 1.5rem;
+      border-radius: 40px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.12);
+      }
+    }
+
+    .activeMenu {
+      background: #b99273;
+      color: white;
+    }
+  }
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .loginInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #b99273;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    .calender {
+      color: white;
+      font-size: 16px;
+    }
+
+    .reservation {
+      border: none;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+
+  .mobile-menu-icon {
+    display: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+  }
+
+  &.active {
+    background: white;
+    padding: 1vw 3vw;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    .realnet,
+    .mobile-menu-icon {
+      color: black;
+    }
+
+    .menuList .menu {
+      color: black;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.08);
+      }
+    }
+
+    .menuList .activeMenu {
+      background: #b99273;
+      color: white;
+    }
+  }
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(2px);
+  z-index: 9998;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -330px;
+  width: 300px;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+  padding: 22px 18px;
+  transition: right 0.35s ease;
+  box-shadow: -10px 0 35px rgba(0, 0, 0, 0.16);
+
+  &.open {
+    right: 0;
+  }
+
+  .close-icon {
+    font-size: 28px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem 0;
+
+    img {
+      width: 38px;
+      height: 38px;
+    }
+
+    h2 {
+      font-family: "Colonna MT", serif;
+      font-size: 2rem;
+      color: #111;
+    }
+  }
+
+  .mobile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    button {
+      width: 100%;
+      padding: 14px 16px;
+      border: none;
+      border-radius: 10px;
+      background: #f5f2ed;
+      color: #222;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: #b99273;
+        color: white;
+      }
+    }
+
+    .mobile-reservation {
+      background: #b99273;
+      color: white;
+      text-align: center;
+    }
+
+    .mobile-logout {
+      background: #ffe1dc;
+      color: #d92d20;
+      text-align: center;
+
+      &:hover {
+        background: #d92d20;
+        color: white;
+      }
+    }
+  }
+}
+
+.profile-drawer {
+  position: fixed;
+  top: 0;
+  right: -340px;
+  width: 320px;
+  height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  z-index: 9999;
+  padding: 22px 18px;
+  box-shadow: -10px 0 35px rgba(0, 0, 0, 0.16);
+  transition: right 0.35s ease;
+  overflow-y: auto;
+
+  &.open {
+    right: 0;
+  }
+
+  .close-icon {
+    font-size: 27px;
+    color: #64748b;
+    cursor: pointer;
+  }
+
+  .drawer-user {
+    text-align: center;
+    padding: 34px 0 28px;
+
+    img {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h3 {
+      margin: 16px 0 0;
+      font-size: 18px;
+      color: #1f2937;
+      text-transform: capitalize;
+    }
+
+    p {
+      margin: 7px 0 0;
+      font-size: 14px;
+      color: #718096;
+      word-break: break-word;
+    }
+  }
+
+  .drawer-links {
+    padding: 18px 0;
+    border-top: 2px dashed #e2e8f0;
+    border-bottom: 2px dashed #e2e8f0;
+
+    .drawer-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 12px;
+      margin-bottom: 6px;
+      border-radius: 12px;
+      cursor: pointer;
+      color: #607487;
+      font-size: 15px;
+      font-weight: 500;
+
+      svg {
+        font-size: 22px;
+      }
+
+      &:hover {
+        background: #f1f5f9;
+        color: #1f2937;
+
+        svg {
+          color: #b99273;
+        }
+      }
+    }
+  }
+
+  .drawer-logout {
+    width: 100%;
+    height: 48px;
+    margin-top: 28px;
+    border: none;
+    border-radius: 11px;
+    background: #ffe1dc;
+    color: #d92d20;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 1rem 1.2rem;
+
+    .logo {
+      img {
+        width: 32px;
+        height: 32px;
+      }
+
+      .realnet {
+        font-size: 1.5rem;
+      }
+    }
+
+    .menuList {
+      display: none;
+    }
+
+    .loginInfo {
+      display: none;
+    }
+
+    .mobile-menu-icon {
+      display: block;
+    }
+
+    .profile-img {
+      width: 38px;
+      height: 38px;
+    }
+
+    &.active {
+      padding: 0.8rem 1.2rem;
+    }
+  }
+
+  .profile-drawer {
+    width: 280px;
+    right: -300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-drawer,
+  .profile-drawer {
+    width: 85%;
+    right: -90%;
+  }
+
+  .mobile-drawer.open,
+  .profile-drawer.open {
+    right: 0;
+  }
+}

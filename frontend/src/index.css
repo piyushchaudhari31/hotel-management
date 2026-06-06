@@ -1,0 +1,29 @@
+@font-face {
+  font-family: regular;
+  src: url('../public/font/Gilroy-Regular.ttf');
+}
+@font-face {
+    font-family: bold;
+    src: url('../public/font/Gilroy-Bold.ttf');
+}
+
+@font-face {
+  font-family: footer-text;
+  src: url('../public/font/acworth-bold.otf');
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: regular;
+}
+html,
+body {
+   height: 100%;
+   width: 100%;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}

@@ -1,0 +1,44 @@
+.room-Detail {
+  padding: 28px;
+}
+.room-Detail .createRoom {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.room-Detail .createRoom .create-room-info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vw;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.room-Detail .createRoom .create-room-info h3 {
+  font-size: 1.5vw;
+  font-family: bell MT;
+}
+.room-Detail .createRoom .create-room-info hr {
+  width: 100%;
+  border: 1px dashed gray;
+}
+.room-Detail .createRoom .create-room-info .roomName {
+  padding: 0.8rem;
+}
+.room-Detail .createRoom .create-room-info input {
+  padding: 0.5rem;
+}
+.room-Detail .createRoom .room-detail {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vw;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 20px;
+}/*# sourceMappingURL=appAdmin.css.map */

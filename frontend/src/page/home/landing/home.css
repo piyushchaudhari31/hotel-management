@@ -1,0 +1,399 @@
+@charset "UTF-8";
+.landingpage .section1 {
+  height: 100vh;
+  width: 100%;
+  background: url("../../../assets/backLanding.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.landingpage .section1 .Home-page {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5843137255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.landingpage .section1 .Home-page img {
+  width: 80px;
+  height: 90px;
+}
+.landingpage .section1 .Home-page .Title {
+  color: white;
+  font-size: 2.9vw;
+}
+.landingpage .section1 .Home-page .desc {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2vw;
+  text-align: center;
+  width: 40%;
+  line-height: 2rem;
+}
+.landingpage .section2 {
+  margin-top: 8rem;
+  padding: 0 5rem;
+}
+.landingpage .section2 .information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.landingpage .section2 .information .images {
+  display: flex;
+  gap: 1rem;
+}
+.landingpage .section2 .information .images img {
+  height: 450px;
+  width: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.landingpage .section2 .information .images img:first-child {
+  margin-top: 2rem;
+}
+.landingpage .section2 .information .detail {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.landingpage .section2 .information .detail h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #b99273;
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+.landingpage .section2 .information .detail h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 100%;
+}
+.landingpage .section2 .information .detail p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+.landingpage .section2 .information .detail button {
+  height: 50px;
+  padding: 0 2rem;
+  width: 150px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid #b99273;
+  color: #b99273;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.landingpage .section2 .information .detail button:hover, .landingpage .section2 .information .detail button:focus {
+  background: #9f7658 !important;
+  color: #fff !important;
+  border: none !important;
+  transform: translateY(-2px);
+}
+.landingpage .section3 {
+  margin-top: 12rem;
+  padding: 1rem;
+  background-color: #f5f2ed;
+}
+.landingpage .section3 .rooms {
+  width: 100%;
+  padding: 5rem 6%;
+  text-align: center;
+}
+.landingpage .section3 .rooms .smallTitle {
+  color: #b99273;
+  font-size: 13px;
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+}
+.landingpage .section3 .rooms .mainTitle {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: #222;
+}
+.landingpage .section3 .rooms .roomCard {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  min-height: 520px;
+}
+.landingpage .section3 .rooms .roomCard .roomText {
+  width: 50%;
+  padding: 5rem 4rem;
+  text-align: left;
+}
+.landingpage .section3 .rooms .roomCard .roomText .available {
+  color: green;
+  font-size: 1rem;
+}
+.landingpage .section3 .rooms .roomCard .roomText .booked {
+  color: red;
+  font-size: 1rem;
+}
+.landingpage .section3 .rooms .roomCard .roomText .price {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 2rem;
+}
+.landingpage .section3 .rooms .roomCard .roomText .price span {
+  font-size: 2.2rem;
+  color: #111;
+  font-weight: 700;
+}
+.landingpage .section3 .rooms .roomCard .roomText h2 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+.landingpage .section3 .rooms .roomCard .roomText .desc {
+  color: #666;
+  line-height: 1.7rem;
+  margin-bottom: 2rem;
+  font-size: 15px;
+}
+.landingpage .section3 .rooms .roomCard .roomText .features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem 2rem;
+  margin-bottom: 2rem;
+}
+.landingpage .section3 .rooms .roomCard .roomText .features p {
+  font-size: 0.9rem;
+  color: #444;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin: 0;
+}
+.landingpage .section3 .rooms .roomCard .roomText .buttons {
+  display: flex;
+  gap: 1rem;
+}
+.landingpage .section3 .rooms .roomCard .roomText .buttons button {
+  height: 48px;
+  padding: 0 2.5rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.landingpage .section3 .rooms .roomCard .roomText .buttons .bookBtn {
+  background: #b99273;
+  color: #fff;
+  border: none;
+}
+.landingpage .section3 .rooms .roomCard .roomText .buttons .viewBtn {
+  background: #fff;
+  color: #222;
+  border: 1px solid #ddd;
+}
+.landingpage .section3 .rooms .roomCard > img {
+  width: 50%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+}
+.landingpage .section3 .rooms .ant-carousel .slick-prev,
+.landingpage .section3 .rooms .ant-carousel .slick-next {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landingpage .section3 .rooms .ant-carousel .slick-prev::after,
+.landingpage .section3 .rooms .ant-carousel .slick-next::after {
+  display: none;
+}
+.landingpage .section3 .rooms .ant-carousel .slick-prev {
+  left: -2%;
+}
+.landingpage .section3 .rooms .ant-carousel .slick-prev::before {
+  content: "‹";
+  color: white;
+  font-size: 40px;
+  line-height: 1;
+}
+.landingpage .section3 .rooms .ant-carousel .slick-next {
+  right: -2%;
+}
+.landingpage .section3 .rooms .ant-carousel .slick-next::before {
+  content: "›";
+  color: white;
+  font-size: 40px;
+  line-height: 1;
+}
+.landingpage .section4 {
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+}
+.landingpage .section4 .facility {
+  padding: 2rem;
+}
+.landingpage .section4 .facility .smallTitle {
+  color: #b99273;
+  font-size: 13px;
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.landingpage .section4 .facility .mainTitle {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: #222;
+  text-align: center;
+}
+.landingpage .section4 .facility .features {
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.landingpage .section4 .facility .features .about-feture {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-weight: 100;
+}
+.landingpage .section4 .facility .features .about-feture .icon {
+  font-size: 2.1vw;
+  color: #b99273;
+}
+.landingpage .section4 .facility .features .about-feture .feture-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.landingpage .section4 .facility .features .about-feture .feture-info h3 {
+  font-size: 1vw;
+}
+.landingpage .section4 .facility .features .about-feture .feture-info p {
+  font-size: 1vw;
+  width: 80%;
+}
+
+@media (max-width: 900px) {
+  .landingpage .section1 .Home-page {
+    padding: 0 1.5rem;
+  }
+  .landingpage .section1 .Home-page img {
+    width: 65px;
+    height: 75px;
+  }
+  .landingpage .section1 .Home-page .Title {
+    font-size: 7vw;
+    text-align: center;
+  }
+  .landingpage .section1 .Home-page .desc {
+    width: 90%;
+    font-size: 4vw;
+    line-height: 1.6rem;
+  }
+  .landingpage .section2 {
+    margin-top: 4rem;
+    padding: 0 1.5rem;
+  }
+  .landingpage .section2 .information {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .landingpage .section2 .information .images {
+    flex-direction: column;
+    width: 100%;
+  }
+  .landingpage .section2 .information .images img {
+    width: 100%;
+    height: 350px;
+  }
+  .landingpage .section2 .information .images img:first-child {
+    margin-top: 0;
+  }
+  .landingpage .section2 .information .detail {
+    width: 100%;
+  }
+  .landingpage .section2 .information .detail h1 {
+    font-size: 2.2rem;
+  }
+  .landingpage .section2 .information .detail p {
+    font-size: 0.95rem;
+  }
+  .landingpage .section3 .rooms .roomCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .landingpage .section3 .rooms .roomCard > img {
+    width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    clip-path: none;
+    order: 1;
+  }
+  .landingpage .section3 .rooms .roomCard .roomText {
+    width: 100%;
+    order: 2;
+    padding: 1.5rem;
+  }
+  .landingpage .section3 .rooms .ant-carousel .slick-prev,
+  .landingpage .section3 .rooms .ant-carousel .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+  .landingpage .section3 .rooms .ant-carousel .slick-prev {
+    left: 8px;
+  }
+  .landingpage .section3 .rooms .ant-carousel .slick-prev::before {
+    font-size: 18px;
+  }
+  .landingpage .section3 .rooms .ant-carousel .slick-next {
+    right: 8px;
+  }
+  .landingpage .section3 .rooms .ant-carousel .slick-next::before {
+    font-size: 18px;
+  }
+  .landingpage .section4 {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  .landingpage .section4 .facility {
+    padding: 1rem;
+  }
+  .landingpage .section4 .facility .mainTitle {
+    font-size: 2.2rem;
+  }
+  .landingpage .section4 .facility .features {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .landingpage .section4 .facility .features .about-feture {
+    align-items: flex-start;
+  }
+  .landingpage .section4 .facility .features .about-feture .icon {
+    font-size: 2rem;
+  }
+  .landingpage .section4 .facility .features .about-feture .feture-info h3 {
+    font-size: 1.1rem;
+  }
+  .landingpage .section4 .facility .features .about-feture .feture-info p {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+}/*# sourceMappingURL=home.css.map */

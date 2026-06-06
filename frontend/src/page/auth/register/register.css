@@ -1,0 +1,155 @@
+.register {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.register .register-left {
+  width: 50%;
+  padding: 6rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+.register .register-left .register-header {
+  margin-bottom: 2.5rem;
+}
+.register .register-left .register-header span {
+  color: #377dff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.register .register-left .register-header h1 {
+  margin-top: 0.8rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111827;
+}
+.register .register-left .register-header p {
+  margin-top: 0.5rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
+.register .register-left .register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.register .register-left .register-form .form-row {
+  display: flex;
+  gap: 1rem;
+}
+.register .register-left .register-form .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.register .register-left .register-form .form-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #374151;
+}
+.register .register-left .register-form .form-group input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 1rem;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.register .register-left .register-form .form-group input:focus {
+  border-color: #377dff;
+  box-shadow: 0 0 0 4px rgba(55, 125, 255, 0.12);
+}
+.register .register-left .register-form .form-group .error {
+  min-height: 14px;
+  font-size: 0.8rem;
+  color: #ef4444;
+}
+.register .register-left .register-form .register-bottom {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.register .register-left .register-form .register-bottom p {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+.register .register-left .register-form .register-bottom p .login-link {
+  color: #377dff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.register .register-left .register-form .register-bottom p .login-link:hover {
+  text-decoration: underline;
+}
+.register .register-left .register-form .register-bottom button {
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 12px;
+  background: #377dff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.register .register-left .register-form .register-bottom button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+.register .reigster-right {
+  width: 50%;
+  position: relative;
+}
+.register .reigster-right img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 900px) {
+  .register {
+    flex-direction: column-reverse;
+  }
+  .register .register-left {
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+  .register .register-left .register-header h1 {
+    font-size: 2.2rem;
+  }
+  .register .register-left .register-header p {
+    font-size: 0.95rem;
+  }
+  .register .register-left .register-form .form-row {
+    flex-direction: column;
+  }
+  .register .register-left .register-form .register-bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .register .register-left .register-form .register-bottom p {
+    text-align: center;
+  }
+  .register .register-left .register-form .register-bottom button {
+    width: 100%;
+  }
+  .register .reigster-right {
+    width: 100%;
+    height: 35vh;
+  }
+  .register .reigster-right img {
+    height: 100%;
+    clip-path: none;
+  }
+}/*# sourceMappingURL=register.css.map */

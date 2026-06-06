@@ -1,0 +1,490 @@
+.landingpage {
+  .section1 {
+    height: 100vh;
+    width: 100%;
+    background: url("../../../assets/backLanding.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .Home-page {
+      height: 100vh;
+      width: 100%;
+      background-color: #00000095;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+
+      img {
+        width: 80px;
+        height: 90px;
+      }
+
+      .Title {
+        color: white;
+        font-size: 2.9vw;
+      }
+
+      .desc {
+        color: white;
+        font-weight: 500;
+        font-size: 1.2vw;
+        text-align: center;
+        width: 40%;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  .section2 {
+    margin-top: 8rem;
+    padding: 0 5rem;
+
+    .information {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4rem;
+      flex-wrap: wrap;
+
+      .images {
+        display: flex;
+        gap: 1rem;
+
+        img {
+          height: 450px;
+          width: 340px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        img:first-child {
+          margin-top: 2rem;
+        }
+      }
+
+      .detail {
+        flex: 1;
+        min-width: 300px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h3 {
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: #b99273;
+          opacity: 0.7;
+          letter-spacing: 2px;
+        }
+
+        h1 {
+          font-size: 3rem;
+          font-weight: 400;
+          line-height: 1.2;
+          width: 100%;
+        }
+
+        p {
+          width: 100%;
+          font-size: 1rem;
+          line-height: 1.7;
+          color: #555;
+        }
+
+        button {
+          height: 50px;
+          padding: 0 2rem;
+          width: 150px;
+          border-radius: 6px;
+          background: transparent;
+          border: 1px solid #b99273;
+          color: #b99273;
+          font-size: 0.95rem;
+          font-weight: 600;
+          transition: all 0.3s ease;
+
+          &:hover,
+          &:focus {
+            background: #9f7658 !important;
+            color: #fff !important;
+            border: none !important;
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+  }
+
+  .section3 {
+    margin-top: 12rem;
+    padding: 1rem;
+    background-color: #f5f2ed;
+
+    .rooms {
+      width: 100%;
+      padding: 5rem 6%;
+      text-align: center;
+
+      .smallTitle {
+        color: #b99273;
+        font-size: 13px;
+        letter-spacing: 6px;
+        margin-bottom: 12px;
+      }
+
+      .mainTitle {
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        color: #222;
+      }
+
+      .roomCard {
+        width: 100%;
+        background: #fff;
+        display: flex;
+        min-height: 520px;
+
+        .roomText {
+          width: 50%;
+          padding: 5rem 4rem;
+          text-align: left;
+
+          .available {
+            color: green;
+            font-size: 1rem;
+          }
+
+          .booked {
+            color: red;
+            font-size: 1rem;
+          }
+
+          .price {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 2rem;
+
+            span {
+              font-size: 2.2rem;
+              color: #111;
+              font-weight: 700;
+            }
+          }
+
+          h2 {
+            font-size: 2.3rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #222;
+          }
+
+          .desc {
+            color: #666;
+            line-height: 1.7rem;
+            margin-bottom: 2rem;
+            font-size: 15px;
+          }
+
+          .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem 2rem;
+            margin-bottom: 2rem;
+
+            p {
+              font-size: 0.9rem;
+              color: #444;
+              display: flex;
+              gap: 0.4rem;
+              align-items: center;
+              margin: 0;
+            }
+          }
+
+          .buttons {
+            display: flex;
+            gap: 1rem;
+
+            button {
+              height: 48px;
+              padding: 0 2.5rem;
+              letter-spacing: 2px;
+              cursor: pointer;
+            }
+
+            .bookBtn {
+              background: #b99273;
+              color: #fff;
+              border: none;
+            }
+
+            .viewBtn {
+              background: #fff;
+              color: #222;
+              border: 1px solid #ddd;
+            }
+          }
+        }
+
+        > img {
+          width: 50%;
+          height: auto;
+          object-fit: cover;
+          clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+
+      .ant-carousel {
+        .slick-prev,
+        .slick-next {
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          background: rgba(0, 0, 0, 0.6);
+          z-index: 1000;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        .slick-prev {
+          left: -2%;
+
+          &::before {
+            content: "‹";
+            color: white;
+            font-size: 40px;
+            line-height: 1;
+          }
+        }
+
+        .slick-next {
+          right: -2%;
+
+          &::before {
+            content: "›";
+            color: white;
+            font-size: 40px;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .section4 {
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+
+    .facility {
+      padding: 2rem;
+
+      .smallTitle {
+        color: #b99273;
+        font-size: 13px;
+        letter-spacing: 6px;
+        margin-bottom: 12px;
+        text-align: center;
+      }
+
+      .mainTitle {
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        color: #222;
+        text-align: center;
+      }
+
+      .features {
+        padding: 2rem 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+
+        .about-feture {
+          display: flex;
+          align-items: center;
+          gap: 1.2rem;
+          font-weight: 100;
+
+          .icon {
+            font-size: 2.1vw;
+            color: #b99273;
+          }
+
+          .feture-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            h3 {
+              font-size: 1vw;
+            }
+
+            p {
+              font-size: 1vw;
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .landingpage {
+    .section1 {
+      .Home-page {
+        padding: 0 1.5rem;
+
+        img {
+          width: 65px;
+          height: 75px;
+        }
+
+        .Title {
+          font-size: 7vw;
+          text-align: center;
+        }
+
+        .desc {
+          width: 90%;
+          font-size: 4vw;
+          line-height: 1.6rem;
+        }
+      }
+    }
+
+    .section2 {
+      margin-top: 4rem;
+      padding: 0 1.5rem;
+
+      .information {
+        flex-direction: column;
+        gap: 2rem;
+
+        .images {
+          flex-direction: column;
+          width: 100%;
+
+          img {
+            width: 100%;
+            height: 350px;
+          }
+
+          img:first-child {
+            margin-top: 0;
+          }
+        }
+
+        .detail {
+          width: 100%;
+
+          h1 {
+            font-size: 2.2rem;
+          }
+
+          p {
+            font-size: 0.95rem;
+          }
+        }
+      }
+    }
+
+    .section3 {
+      .rooms {
+        .roomCard {
+          display: flex;
+          flex-direction: column;
+
+          > img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            clip-path: none;
+            order: 1;
+          }
+
+          .roomText {
+            width: 100%;
+            order: 2;
+            padding: 1.5rem;
+          }
+        }
+
+        .ant-carousel {
+          .slick-prev,
+          .slick-next {
+            width: 30px;
+            height: 30px;
+          }
+
+          .slick-prev {
+            left: 8px;
+
+            &::before {
+              font-size: 18px;
+            }
+          }
+
+          .slick-next {
+            right: 8px;
+
+            &::before {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .section4 {
+      margin-top: 4rem;
+      margin-bottom: 5rem;
+
+      .facility {
+        padding: 1rem;
+
+        .mainTitle {
+          font-size: 2.2rem;
+        }
+
+        .features {
+          padding: 1rem;
+          grid-template-columns: 1fr;
+          gap: 2rem;
+
+          .about-feture {
+            align-items: flex-start;
+
+            .icon {
+              font-size: 2rem;
+            }
+
+            .feture-info {
+              h3 {
+                font-size: 1.1rem;
+              }
+
+              p {
+                font-size: 0.95rem;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

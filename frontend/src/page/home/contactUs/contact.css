@@ -1,0 +1,174 @@
+.contactPage .contactHero {
+  height: 62vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url("../../../assets/backContact.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactPage .contactHero .overlay {
+  text-align: center;
+  color: white;
+}
+.contactPage .contactHero .overlay .smallTitle {
+  color: #b99273;
+  letter-spacing: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.contactPage .contactHero .overlay h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.contactPage .contactHero .overlay p {
+  font-size: 1.2rem;
+}
+.contactPage .contactSection {
+  padding: 6rem 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.contactPage .contactSection .contactInfo {
+  background: white;
+  padding: 3rem;
+  border-radius: 18px;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.08);
+}
+.contactPage .contactSection .contactInfo .smallTitle {
+  color: #b99273;
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.contactPage .contactSection .contactInfo h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+.contactPage .contactSection .contactInfo .desc {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.contactPage .contactSection .contactInfo .infoBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+  color: #333;
+  font-size: 1rem;
+}
+.contactPage .contactSection .contactInfo .infoBox svg {
+  color: #b99273;
+  font-size: 1.2rem;
+}
+.contactPage .contactSection .contactForm {
+  background: white;
+  padding: 3rem;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contactPage .contactSection .contactForm .form-group {
+  width: 100%;
+}
+.contactPage .contactSection .contactForm .form-group .error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+.contactPage .contactSection .contactForm input,
+.contactPage .contactSection .contactForm textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-family: inherit;
+}
+.contactPage .contactSection .contactForm input:focus,
+.contactPage .contactSection .contactForm textarea:focus {
+  border-color: #b99273;
+}
+.contactPage .contactSection .contactForm textarea {
+  height: 160px;
+  resize: none;
+}
+.contactPage .contactSection .contactForm .send-btn {
+  width: 100%;
+  height: 55px;
+  background: #b99273 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.contactPage .contactSection .contactForm .send-btn:hover {
+  background: #9f7658 !important;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .contactPage .contactHero {
+    height: 50vh;
+    padding: 0 1rem;
+  }
+  .contactPage .contactHero .overlay h1 {
+    font-size: 2.7rem;
+  }
+  .contactPage .contactHero .overlay .smallTitle {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+  }
+  .contactPage .contactHero .overlay p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .contactPage .contactSection {
+    padding: 4rem 1.2rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .contactPage .contactSection .contactInfo,
+  .contactPage .contactSection .contactForm {
+    padding: 1.5rem;
+    border-radius: 14px;
+  }
+  .contactPage .contactSection .contactInfo .smallTitle {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+  }
+  .contactPage .contactSection .contactInfo h2 {
+    font-size: 2rem;
+  }
+  .contactPage .contactSection .contactInfo .desc {
+    font-size: 0.95rem;
+  }
+  .contactPage .contactSection .contactInfo .infoBox {
+    align-items: flex-start;
+    font-size: 0.95rem;
+  }
+  .contactPage .contactSection .contactInfo .infoBox svg {
+    min-width: 20px;
+    margin-top: 3px;
+  }
+  .contactPage .contactSection .contactForm input,
+  .contactPage .contactSection .contactForm textarea {
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+  .contactPage .contactSection .contactForm textarea {
+    height: 140px;
+  }
+  .contactPage .contactSection .contactForm .send-btn {
+    height: 50px;
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

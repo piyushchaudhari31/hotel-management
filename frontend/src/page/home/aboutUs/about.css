@@ -1,0 +1,166 @@
+.AboutUs .section1 {
+  background-image: url("../../../assets/backAbout.png");
+  height: 60vh;
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.AboutUs .section1 .title {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5647058824);
+  flex-direction: column;
+}
+.AboutUs .section1 .title .smallTitle {
+  color: #b99273;
+  font-size: 1.2vw;
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+}
+.AboutUs .section1 .title .mainTitle {
+  font-size: 4vw;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: white;
+  font-family: Harrington;
+  font-family: bell MT;
+}
+.AboutUs .section1 .title svg {
+  font-size: 2vw;
+  position: absolute;
+  bottom: -4%;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  padding: 0.5vw;
+}
+.AboutUs .section2 {
+  padding: 5% 8%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.AboutUs .section2 img {
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60vh;
+  border-radius: 5px;
+}
+.AboutUs .section2 div {
+  width: 100%;
+}
+.AboutUs .section2 div h3 {
+  color: #b99273;
+  font-family: bell MT;
+}
+.AboutUs .section2 div h1 {
+  font-family: bell MT;
+  font-size: 2.5vw;
+  width: 70%;
+}
+.AboutUs .section2 div p {
+  width: 80%;
+  font-size: 1.1vw;
+  line-height: 1.5vw;
+  font-family: bell MT;
+}
+.AboutUs .section2 div div {
+  margin-top: 15%;
+  display: flex;
+  gap: 0.8rem;
+}
+.AboutUs .section2 div div .rooms.ant-btn {
+  height: 50px;
+  padding: 0 2rem;
+  border-radius: 6px;
+  border: none;
+  background: #b99273;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.AboutUs .section2 div div .rooms.ant-btn:hover, .AboutUs .section2 div div .rooms.ant-btn:focus {
+  background: #9f7658 !important;
+  color: #fff !important;
+  border: none !important;
+  transform: translateY(-2px);
+}
+.AboutUs .section2 div div .talkBtn.ant-btn {
+  height: 50px;
+  padding: 0 2rem;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid #b99273;
+  color: #b99273;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.AboutUs .section2 div div .talkBtn.ant-btn:hover, .AboutUs .section2 div div .talkBtn.ant-btn:focus {
+  background: #b99273 !important;
+  color: #fff !important;
+  border-color: #b99273 !important;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .AboutUs .section1 {
+    height: 50vh;
+  }
+  .AboutUs .section1 .title {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .AboutUs .section1 .title .smallTitle {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+  }
+  .AboutUs .section1 .title .mainTitle {
+    font-size: 2.6rem;
+  }
+  .AboutUs .section1 .title svg {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    bottom: -20px;
+  }
+  .AboutUs .section2 {
+    padding: 4rem 1.2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .AboutUs .section2 img {
+    width: 100%;
+    height: 320px;
+  }
+  .AboutUs .section2 div {
+    width: 100%;
+  }
+  .AboutUs .section2 div h3 {
+    font-size: 1rem;
+  }
+  .AboutUs .section2 div h1 {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .AboutUs .section2 div p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+  .AboutUs .section2 div div {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .AboutUs .section2 div div .rooms.ant-btn,
+  .AboutUs .section2 div div .talkBtn.ant-btn {
+    width: 100%;
+  }
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,112 @@
+.footer {
+  background: black;
+  color: white;
+  padding-top: 5rem;
+  overflow: hidden;
+  position: relative;
+  margin-top: 4rem;
+}
+.footer .footerTop {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+.footer .logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.footer .logo span {
+  color: #b99273;
+}
+.footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer .links p {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer .links p:hover {
+  color: #b99273;
+}
+.footer .socials {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.footer .socials .icon {
+  width: 65px;
+  height: 65px;
+  padding: 18px;
+  border-radius: 15px;
+  background: #1f1f1f;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer .socials .icon:hover {
+  background: #b99273;
+}
+.footer .copy {
+  color: #cfcfcf;
+  font-size: 1rem;
+}
+.footer .bigText {
+  font-size: 18rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 0.8;
+  margin-top: 3rem;
+  margin-bottom: -3rem;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding-top: 3rem;
+    margin-top: 3rem;
+  }
+  .footer .footerTop {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  .footer .logo {
+    font-size: 2rem;
+  }
+  .footer .links {
+    gap: 1rem;
+  }
+  .footer .links p {
+    font-size: 0.95rem;
+  }
+  .footer .socials {
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .footer .socials .icon {
+    width: 48px;
+    height: 48px;
+    padding: 13px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+  }
+  .footer .copy {
+    font-size: 0.9rem;
+  }
+  .footer .bigText {
+    font-size: 4.5rem;
+    margin-top: 2rem;
+    margin-bottom: -0.8rem;
+    line-height: 1;
+  }
+}/*# sourceMappingURL=footer.css.map */

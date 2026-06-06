@@ -1,0 +1,130 @@
+.user-list {
+  width: 100%;
+  min-height: 100vh;
+  padding: 28px;
+  background: #f5f7fb;
+}
+
+.user-header {
+  margin-bottom: 24px;
+}
+.user-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 8px;
+}
+.user-header p {
+  color: #7b8794;
+  font-size: 15px;
+}
+
+.user-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.search-input {
+  margin: 18px 0 24px;
+}
+.search-input .ant-input-affix-wrapper {
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 0 16px;
+  box-shadow: none;
+}
+.search-input .ant-input-affix-wrapper input {
+  font-size: 15px;
+}
+.search-input .ant-input-affix-wrapper:hover, .search-input .ant-input-affix-wrapper:focus-within {
+  border-color: #111827;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.user-info h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+}
+.user-info p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #7b8794;
+}
+
+.ant-tabs-nav {
+  margin-bottom: 0 !important;
+}
+
+.ant-tabs-tab {
+  font-weight: 600;
+  color: #64748b !important;
+  padding: 12px 0 !important;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #111827 !important;
+}
+
+.ant-tabs-ink-bar {
+  background: #111827 !important;
+  height: 3px !important;
+  border-radius: 20px;
+}
+
+.ant-table {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ant-table-container {
+  border-radius: 16px;
+}
+
+.ant-table-thead > tr > th {
+  background: #f8fafc !important;
+  color: #475569 !important;
+  font-weight: 700 !important;
+  border-bottom: none !important;
+  padding: 18px 16px !important;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 18px 16px !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+  color: #111827;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f8fafc !important;
+}
+
+.ant-tag {
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.ant-pagination {
+  margin-top: 24px !important;
+}
+
+.ant-pagination-item {
+  border-radius: 10px !important;
+}
+
+.ant-pagination-item-active {
+  border-color: #111827 !important;
+}
+.ant-pagination-item-active a {
+  color: #111827 !important;
+}/*# sourceMappingURL=booking.css.map */
