@@ -24,7 +24,7 @@ const Navbar = () => {
 
   const profileImage = user?.profileImg
     ? `https://hotel-management-be-75w4.onrender.com/profile_img/${user.profileImg}`
-    : "https://cdn-icons-png.flaticon.com/512/149/149071.png";
+    : "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg";
 
   const closeAll = () => {
     setOpenProfile(false);
