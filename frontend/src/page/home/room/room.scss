@@ -45,47 +45,17 @@
   }
 
   .booking-filter {
-    width: 90%;
-    margin: 30px auto;
+    width: 50%;
+    margin: 50px auto;
     background: white;
     padding: 20px;
     border-radius: 18px;
     display: flex;
+    justify-content: center;
+
     align-items: center;
-    gap: 18px;
+    gap: 25px;
     box-shadow: 0 0px 30px rgba(0, 0, 0, 0.06);
-
-    .ant-picker-dropdown {
-      width: calc(100vw - 30px) !important;
-      max-width: 360px !important;
-      left: 50% !important;
-      right: auto !important;
-      transform: translateX(-50%) !important;
-    }
-
-    .ant-picker-panel-container {
-      width: 100% !important;
-      overflow: hidden !important;
-    }
-
-    .ant-picker-panels {
-      display: flex !important;
-      flex-direction: column !important;
-    }
-
-    .ant-picker-panel,
-    .ant-picker-date-panel {
-      width: 100% !important;
-    }
-
-    .ant-picker-content {
-      width: 100% !important;
-      table-layout: fixed !important;
-    }
-
-    .ant-picker-cell {
-      padding: 2px 0 !important;
-    }
 
     .guest-input {
       width: 140px;
@@ -504,6 +474,37 @@
       gap: 1rem;
       padding: 1rem;
 
+      .ant-picker-dropdown {
+        width: calc(100vw - 30px) !important;
+        max-width: 360px !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
+      }
+
+      .ant-picker-panel-container {
+        width: 100% !important;
+        overflow: hidden !important;
+      }
+
+      .ant-picker-panels {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+      .ant-picker-panel,
+      .ant-picker-date-panel {
+        width: 100% !important;
+      }
+
+      .ant-picker-content {
+        width: 100% !important;
+        table-layout: fixed !important;
+      }
+
+      .ant-picker-cell {
+        padding: 2px 0 !important;
+      }
       .date-picker,
       .guest-input,
       .check-btn {

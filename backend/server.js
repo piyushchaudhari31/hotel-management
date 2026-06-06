@@ -45,7 +45,7 @@ app.use('/api/book', bookRoutes)
 app.use("/api/payment", paymentRoutes)
 
 
-const port = process.env.port
+const port = process.env.port || 3000
 
 app.listen(port, () => {
     console.log(`server is running on port ${port}`);
