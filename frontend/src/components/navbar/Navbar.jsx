@@ -24,7 +24,7 @@ const Navbar = () => {
 
   const profileImage = user?.profileImg
     ? `https://hotel-management-be-75w4.onrender.com/profile_img/${user.profileImg}`
-    : "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg";
+    : "https://cdn-icons-png.flaticon.com/512/149/149071.png";
 
   const closeAll = () => {
     setOpenProfile(false);
@@ -126,7 +126,7 @@ const Navbar = () => {
             </button>
           )}
 
-          
+
         </div>
       </div>
 
@@ -134,7 +134,15 @@ const Navbar = () => {
         <IoClose className="close-icon" onClick={() => setOpenProfile(false)} />
 
         <div className="drawer-user">
-          <img src={profileImage} alt="profile" />
+          <img
+            src={profileImage}
+            className="profile-img"
+            alt="profile"
+            onClick={() => setOpenProfile(true)}
+            onError={(e) => {
+              e.currentTarget.src = "https://cdn-icons-png.flaticon.com/512/149/149071.png";
+            }}
+          />
           <h3>{user?.fullName?.firstName || user?.username || "User"}</h3>
           <p>{user?.email || "user@gmail.com"}</p>
         </div>
