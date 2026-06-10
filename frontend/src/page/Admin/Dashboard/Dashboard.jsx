@@ -35,7 +35,7 @@ const Dashboard = () => {
             {room.map((data) => (
               <div className="img" key={data._id}>
                 <img
-                  src={`http://localhost:3000/room_img/${data.roomImage}`}
+                  src={`https://hotel-management-be-75w4.onrender.com/room_img/${data.roomImage}`}
                   alt="Luxury Room"
                 />
 
@@ -104,7 +104,7 @@ const Dashboard = () => {
                         className="user-image"
                         src={
                           record?.userId?.profileImg
-                            ? `http://localhost:3000/profile_img/${record.userId.profileImg}`
+                            ? `https://hotel-management-be-75w4.onrender.com/profile_img/${record.userId.profileImg}`
                             : userImg
                         }
                         alt=""

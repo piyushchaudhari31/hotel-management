@@ -209,7 +209,7 @@ const AppAdmin = () => {
         <Avatar
           shape="square"
           size={60}
-          src={`http://localhost:3000/room_img/${image}`}
+          src={`https://hotel-management-be-75w4.onrender.com/room_img/${image}`}
         />
       ),
     },

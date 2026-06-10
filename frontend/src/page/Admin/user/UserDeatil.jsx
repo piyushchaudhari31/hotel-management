@@ -60,7 +60,7 @@ const UserDeatil = () => {
             size={45}
             src={
               record.image
-                ? `http://localhost:3000/profile_img/${record.image}`
+                ? `https://hotel-management-be-75w4.onrender.com/profile_img/${record.image}`
                 : `${userImg}`
             }
           />
