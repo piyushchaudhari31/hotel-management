@@ -26,9 +26,9 @@ router.post('/createRoom', authMiddleware ,upload.single('image'), createRoom)
 
 router.get('/getAllRoom', getALLRoom)
 
-router.delete('/deleteRoom/:id', deleteRoombyId)
+router.delete('/deleteRoom/:id', authMiddleware,deleteRoombyId)
 
-router.put('/updateRoom/:id', upload.single('image'), updateRoom)
+router.put('/updateRoom/:id',authMiddleware, upload.single('image'), updateRoom)
 
 router.post('/roomIsAvailable',authMiddleware,roomIsAvailable)
 
