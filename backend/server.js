@@ -25,8 +25,11 @@ const limiter = rateLimit({
 })
 
 app.use(cors({
-    origin: "https://hotel-management-n6b2.onrender.com",
-    credentials: true
+  origin: [
+    "https://hotel-management-n6b2.onrender.com",
+    "http://localhost:5173"
+  ],
+  credentials: true
 }))
 app.use(express.json())
 app.use(cookieParser())
