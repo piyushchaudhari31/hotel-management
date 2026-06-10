@@ -111,7 +111,7 @@ const GetRoomById = () => {
         <div className="room-info-card">
           <div className="room-image">
             <img
-              src={`https://hotel-management-be-75w4.onrender.com/room_img/${room?.roomImage}`}
+              src={`http://localhost:3000/room_img/${room?.roomImage}`}
               alt={"double"}
             />
 

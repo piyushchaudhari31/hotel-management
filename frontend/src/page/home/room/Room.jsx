@@ -211,7 +211,7 @@ const Room = () => {
               <div className="img-section">
                 <Image
                   preview={false}
-                  src={`https://hotel-management-be-75w4.onrender.com/room_img/${data.roomImage}`}
+                  src={`http://localhost:3000/room_img/${data.roomImage}`}
                   alt={data.roomType}
                   className="room-image"
                 />
@@ -265,7 +265,7 @@ const Room = () => {
                   <input name="phone" value={values.phone} onChange={handleChange} onBlur={handleBlur} />
                   {touched.phone && errors.phone ? (<p className="error">{errors.phone}</p>) : null}
                 </div>
-                <input type="text" placeholder="state" onChange={handleChange} onBlur={handleBlur} />
+                <input  type="text" placeholder="state" onChange={handleChange} onBlur={handleBlur} />
               </div>
               <div className="Address">
                 <input type="text" placeholder="Address" name="address" onChange={handleChange} onBlur={handleBlur} value={values.address} />

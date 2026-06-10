@@ -135,7 +135,7 @@ const Home = () => {
                     </div>
 
                     <img
-                      src={`https://hotel-management-be-75w4.onrender.com/room_img/${room.roomImage}`}
+                      src={`http://localhost:3000/room_img/${room.roomImage}`}
                       alt={room.roomType}
                     />
                   </div>

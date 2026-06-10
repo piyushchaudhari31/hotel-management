@@ -46,7 +46,7 @@ const MyBooking = () => {
             <div className="booking-card" key={booking._id}>
               <div className="header">
 
-                <Image className="img" src={`https://hotel-management-be-75w4.onrender.com/room_img/${booking?.roomId?.roomImage}`}
+                <Image className="img" src={`http://localhost:3000/room_img/${booking?.roomId?.roomImage}`}
                   alt="room-img"></Image>
               </div>
 
