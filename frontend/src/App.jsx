@@ -20,7 +20,7 @@ import Dashboard from './page/Admin/Dashboard/Dashboard'
 import AppAdmin from './page/Admin/appAdmin/AppAdmin'
 import UserDeatil from './page/Admin/user/UserDeatil'
 import Booking from './page/Admin/booking/Booking'
-import ProtectedAdmin from './utils/protectsFolder/protecteRouteAdmin/ProtectedAdmin'
+// import ProtectedAdmin from './utils/protectsFolder/protecteRouteAdmin/ProtectedAdmin'
 import AdminLayout from './utils/adminLayout/AdminLayout'
 
 
@@ -53,7 +53,7 @@ const App = () => {
       <Route path="/payment-success" element={<PaymentSuccess />} />
 
 
-      <Route path="/admin-Dashboard" element={<ProtectedAdmin><AdminLayout /></ProtectedAdmin>}>
+      <Route path="/admin-Dashboard" element={<AdminLayout />}>
         <Route index element={<Dashboard />} />
         <Route path="detail" element={<AppAdmin />} />
         <Route path="user" element={<UserDeatil />} />

@@ -3,7 +3,8 @@ import { Navigate } from "react-router-dom";
 
 const ProtectedAdmin = ({ children }) => {
   const { data: user, loading } = useSelector((state) => state.user);
-
+  
+  
   if (loading) {
     return <h1>Loading...</h1>;
   }
