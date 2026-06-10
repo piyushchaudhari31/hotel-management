@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { verifyPayment } from "../../store/thunk/PaymentThunk";
+import { verifyPayment } from "../../store/thunk/paymentThunk";
 import toast from "react-hot-toast";
 
 const PaymentSuccess = () => {
