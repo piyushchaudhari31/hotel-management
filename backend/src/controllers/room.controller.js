@@ -100,45 +100,55 @@ async function deleteRoombyId(req, res) {
 }
 
 async function updateRoom(req, res) {
-    try {
-        const { role } = req.user
-        if (role !== 'Admin') {
-            return res.status(400).json({
-                message: "Only Admin Can Changes",
-            })
-        }
-        const { id } = req.params
+  try {
+    const { role } = req.user;
 
-        const { roomNumber, roomType, price, description, status, totalMember } = req.body
-        const isExistRoomNumber = await roomModel.findOne({ roomNumber })
-        const updateRoom = {}
-        if (isExistRoomNumber) {
-            return res.status(400).json({
-                message: "Already Exist RoomNumber"
-            })
-        }
-        if (roomNumber) updateRoom.roomNumber = roomNumber
-        if (roomType) updateRoom.roomType = roomType
-        if (price) updateRoom.price = price
-        if (description) updateRoom.description = description
-        if (status) updateRoom.status = status
-        if (totalMember) updateRoom.totalMember = totalMember
-
-        if (req.file) {
-            const image = req.file
-            updateRoom.roomImage = image.path
-        }
-        const room = await roomModel.findByIdAndUpdate(id, updateRoom, { returnDocument: 'after' })
-
-        res.status(200).json({
-            message: "Update Successfuly",
-            room
-        })
-    } catch (error) {
-        console.log(error.message);
-
-
+    if (role !== "Admin") {
+      return res.status(403).json({
+        message: "Only Admin Can Changes",
+      });
     }
+
+    const { id } = req.params;
+    const { roomNumber, roomType, price, description, status, totalMember } = req.body;
+
+    const existingRoom = await roomModel.findOne({
+      roomNumber,
+      _id: { $ne: id },
+    });
+
+    if (existingRoom) {
+      return res.status(400).json({
+        message: "Already Exist RoomNumber",
+      });
+    }
+
+    const updateData = {};
+
+    if (roomNumber) updateData.roomNumber = roomNumber;
+    if (roomType) updateData.roomType = roomType;
+    if (price) updateData.price = price;
+    if (description) updateData.description = description;
+    if (status) updateData.status = status;
+    if (totalMember) updateData.totalMember = totalMember;
+
+    if (req.file) {
+      updateData.roomImage = req.file.filename;
+    }
+
+    const room = await roomModel.findByIdAndUpdate(id, updateData, {
+      new: true,
+    });
+
+    return res.status(200).json({
+      message: "Update Successfully",
+      room,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      message: error.message,
+    });
+  }
 }
 
 async function roomIsAvailable(req, res) {
