@@ -25,7 +25,7 @@ const limiter = rateLimit({
 })
 
 app.use(cors({
-    origin: "*",
+    origin: "https://hotel-management-n6b2.onrender.com",
     credentials: true
 }))
 app.use(express.json())
