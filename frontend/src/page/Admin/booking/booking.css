@@ -127,4 +127,20 @@
 }
 .ant-pagination-item-active a {
   color: #111827 !important;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.checkout-btn {
+  background: #fa8c16;
+  border-color: #fa8c16;
+  color: #fff;
+}
+.checkout-btn:hover {
+  background: #d46b08 !important;
+  border-color: #d46b08 !important;
+  color: #fff !important;
 }/*# sourceMappingURL=booking.css.map */

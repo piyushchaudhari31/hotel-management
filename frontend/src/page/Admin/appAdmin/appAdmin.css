@@ -1,44 +1,148 @@
 .room-Detail {
+  min-height: 100vh;
   padding: 28px;
+  background: #f4f6f9;
 }
-.room-Detail .createRoom {
-  width: 100%;
-  height: 70vh;
+.room-Detail .room-table-card {
+  border-radius: 24px;
+  border: none;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+.room-Detail .room-table-card .room-header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 1.2rem;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
-.room-Detail .createRoom .create-room-info {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8vw;
-  background-color: #FFFFFF;
-  padding: 1rem;
-  border-radius: 20px;
+.room-Detail .room-table-card .room-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 4px;
 }
-.room-Detail .createRoom .create-room-info h3 {
-  font-size: 1.5vw;
-  font-family: bell MT;
+.room-Detail .room-table-card .room-header p {
+  color: #7c7c7c;
+  margin: 0;
 }
-.room-Detail .createRoom .create-room-info hr {
+.room-Detail .room-table-card .room-header button {
+  height: 44px;
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+.room-modal .ant-modal-content {
+  border-radius: 18px !important;
+  padding: 0 !important;
+}
+.room-modal .ant-modal-header {
+  padding: 18px 30px 8px !important;
+  margin: 0 !important;
+  border-bottom: none !important;
+}
+.room-modal .ant-modal-title {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+.room-modal .ant-modal-body {
+  padding: 0 30px 24px !important;
+}
+
+.create-room-form .field {
+  margin-bottom: 14px;
+}
+.create-room-form .field label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.create-room-form .field .ant-input,
+.create-room-form .field .ant-input-number,
+.create-room-form .field .ant-select-selector {
+  height: 44px !important;
+  border-radius: 10px !important;
+}
+.create-room-form .field textarea.ant-input {
+  height: 85px !important;
+  min-height: 85px !important;
+  resize: none;
+}
+.create-room-form .ant-upload-wrapper .ant-upload-drag {
+  height: 120px !important;
+  min-height: 120px !important;
+  border-radius: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.create-room-form .ant-upload-wrapper .ant-upload {
+  padding: 0 !important;
+}
+.create-room-form .ant-upload-wrapper .ant-upload-drag-icon {
+  margin-bottom: 6px !important;
+}
+.create-room-form .ant-upload-wrapper .ant-upload-text {
+  margin: 0 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+}
+.create-room-form .ant-upload-wrapper .ant-upload-hint {
+  margin-top: 4px !important;
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+}
+.create-room-form .two-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.create-room-form .two-field .field {
+  margin-bottom: 14px;
+}
+.create-room-form .create-btn {
   width: 100%;
-  border: 1px dashed gray;
+  height: 48px;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-top: 4px;
 }
-.room-Detail .createRoom .create-room-info .roomName {
-  padding: 0.8rem;
+.create-room-form .error-text {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
 }
-.room-Detail .createRoom .create-room-info input {
-  padding: 0.5rem;
-}
-.room-Detail .createRoom .room-detail {
-  width: 70%;
+
+.room-actions {
   display: flex;
-  flex-direction: column;
-  gap: 0.8vw;
-  background-color: #FFFFFF;
-  padding: 1rem;
-  border-radius: 20px;
+  align-items: center;
+  gap: 12px;
+}
+.room-actions .room-search {
+  width: 260px;
+  height: 42px;
+  border-radius: 12px;
+}
+
+.delete-text {
+  color: #ff4d4f;
+}
+
+@media (max-width: 768px) {
+  .room-Detail {
+    padding: 15px;
+  }
+  .room-Detail .room-header {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 15px;
+  }
+  .create-room-form .two-field {
+    grid-template-columns: 1fr;
+  }
+  :global(.room-modal) {
+    width: 95vw !important;
+    max-width: 95vw !important;
+  }
 }/*# sourceMappingURL=appAdmin.css.map */

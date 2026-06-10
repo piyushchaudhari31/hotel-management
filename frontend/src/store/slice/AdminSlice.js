@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { getAdminDetail } from "../thunk/AdminThunk";
 
 const initialState = {
-  adminData: null,
+  adminData: [],
   loading: false,
   error: null,
 };

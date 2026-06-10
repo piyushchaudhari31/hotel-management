@@ -12,7 +12,9 @@ const UserDeatil = () => {
   const [search, setSearch] = useState("");
   const [activeTab, setActiveTab] = useState("all");
 
-  const customers = useSelector((state) => state.customer.customer);
+  const customers = useSelector((state) => state?.customer?.customers);
+
+  
 
   useEffect(() => {
     dispatch(getAllCustomerDetail());
@@ -20,7 +22,7 @@ const UserDeatil = () => {
 
 
   const filteredCustomers = Array.isArray(customers) ? customers.filter((item) => {
-      const fullName = typeof item.fullName === "object" ? `${item.fullName.firstName || ""} ${item.fullName.lastName || ""}` : item.fullName;
+      const fullName = `${item.firstName || ""} ${item.lastName || ""}` 
 
         const matchSearch = fullName.toLowerCase().includes(search.toLowerCase());
 
