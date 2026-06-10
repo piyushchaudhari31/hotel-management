@@ -80,23 +80,34 @@ async function getALLRoom(req, res) {
 }
 
 async function deleteRoombyId(req, res) {
-    try {
-        const { role } = req.user
-        if (role !== 'Admin') {
-            return res.status(400).json({
-                message: "Only Admin Can Changes",
-            })
-        }
-        const { id } = req.params
-        const room = await roomModel.findByIdAndDelete(id)
-        res.status(200).json({
-            message: "Deleted Sucessfully"
-        })
-    } catch (error) {
-        console.log(error.message);
+  try {
+    const { role } = req.user;
 
-
+    if (role !== "Admin") {
+      return res.status(403).json({
+        message: "Only Admin Can Changes",
+      });
     }
+
+    const { id } = req.params;
+
+    const room = await roomModel.findByIdAndDelete(id);
+
+    if (!room) {
+      return res.status(404).json({
+        message: "Room not found",
+      });
+    }
+
+    return res.status(200).json({
+      message: "Deleted Successfully",
+      roomId: id,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      message: error.message,
+    });
+  }
 }
 
 async function updateRoom(req, res) {
