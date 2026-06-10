@@ -27,13 +27,13 @@ const Login = () => {
                 password: values.password
             }
             const result = await dispatch(userLogin(user))
-            if(userLogin.fulfilled.match(result)){
+            if (userLogin.fulfilled.match(result)) {
                 const user = result.payload
 
-                if(user.role === 'Admin'){
-                    toast.success("Admin Access")
+                if (user.role === 'Admin') {
+                    navigate("/admin-Dashboard")
                 }
-                else{
+                else {
                     navigate('/')
                 }
             }
